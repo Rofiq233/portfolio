@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+    --primary-color: #FFA500;
+    --secondary-color: #fff;
+    --tertiary-color: #000;
+}
+
+body {
+    background-color: #141f31;
+    margin-bottom: 500px;
+
+}
+
+
+.common-wrap {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+
+/* header css start here  */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner {
+    padding: 18px 0;
+    background-color: #0d1e3a;
+    border-bottom: 2px solid #02112a;
+    /* margin-bottom: 50px; */
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header__mob-hum svg {
+    color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+}
+
+.header__middle {
+    display: none;
+}
+
+.header__logo h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-style: italic;
+    line-height: 32px;
+
+}
+
+.header__btn a {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 22px;
+    transition: 0.5s;
+
+}
+
+.header__btn a:hover {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+/* header css end here  */
+
+/* hero banner section css start here  */
+.hero__inner {
+    margin-bottom: 60px;
+}
+
+.hero__left {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.hero__left img {
+    width: 100%;
+}
+
+.hero__sub-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero__title, .about__right h3 {
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero__continue {
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero__des {
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* hero banner section css end here  */
+
+
+
+/* about section css start here  */
+
+
+.about__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__left {
+    margin-bottom: 50px;
+}
+
+.about__left img {
+    width: 100%;
+}
+
+.about__right h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.about__details {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.skills__tabs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+
+.skills__tab {
+    font-size: 20px;
+    border: none;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.skills__tab.active {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.skills__tab.active::before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    content: '';
+    bottom: -5px;
+    left: 0;
+}
+
+.skills__tab-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills__tab-content h5 {
+    padding: 10px;
+    color: var(--secondary-color);
+    display: inline-block;
+    box-shadow: 0 1px 2px 0 var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.skills__tab-content {
+    display: none;
+}
+
+.skills__tab-content.active {
+    display: flex;
+}
+
+.skills__tab-content h6 {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.skills__tab-content p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+/* about section css end here  */
+
+/* attibute section css start here  */
+
+.attibute__inner {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+}
+
+.attibute__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.attibute__item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.attibute__item:last-child {
+    margin-bottom: 0;
+}
+
+.attibute__item img {
+    width: 100%;
+    margin-bottom: 24px;
+    max-width: 128px;
+
+}
+
+.attibute__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: var(--tertiary-color);
+}
+
+.attibute__item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--tertiary-color);
+
+}
+
+
+/* attibute section css end here  */
+
+
+
+@media(min-width:1024px) {
+    .common-wrap {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+
+    /* header section css start here  */
+
+    .header__inner {
+        padding: 20px 0;
+    }
+
+    .header__middle {
+        display: block;
+    }
+
+    .header__middle ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+
+    }
+
+    .header__middle ul a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+    }
+
+    .header__middle ul a:hover {
+        color: var(--primary-color);
+        transition: 0.5s;
+
+    }
+
+    .header__mob-hum {
+        display: none;
+    }
+
+    .header__btn a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* header section css end here */
+
+    /* hero section css start here  */
+
+    .hero__inner {
+        padding: 110px 0;
+    }
+
+    .hero__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 80px;
+    }
+
+    .hero__right {
+        width: 45%;
+    }
+
+    .hero__right {
+        width: 45%;
+    }
+
+    .hero__left {
+        width: calc(100% - 760px);
+        margin-bottom: 0;
+    }
+
+    .hero__left img {
+        width: 100%;
+    }
+
+    /* hero section css end here  */
+
+
+    /* about section css start here  */
+
+    .about__wrap {
+
+        gap: 100px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about__left {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .about__left img {
+        width: 100%;
+    }
+
+    .about__right {
+        width: calc(100% - 600px);
+    }
+
+    .skills__tab-content h6,
+    .skills__tab-content p {
+        display: block;
+        width: 100%;
+    }
+
+
+    /* about section css end here  */
+
+
+    /* attibute section css start here  */
+
+    .attibute__items {
+
+        flex-direction: row;
+        gap: 100px;
+
+    }
+
+    .attibute__item {
+        margin-bottom: 0;
+    }
+
+    /* attibute section css end here  */
+
+
+
+}
