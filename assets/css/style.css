@@ -20,6 +20,17 @@ body {
 
 }
 
+.btn {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 22px;
+    transition: 0.5s;
+}
 
 .common-wrap {
     width: 100%;
@@ -77,18 +88,6 @@ body {
 
 }
 
-.header__btn a {
-    padding: 10px 15px;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 16px;
-    line-height: 22px;
-    transition: 0.5s;
-
-}
 
 .header__btn a:hover {
     background-color: transparent;
@@ -307,6 +306,67 @@ body {
 /* attibute section css end here  */
 
 
+/* contact section css start here  */
+
+
+.contact__inner {
+    background-color: #fff;
+    padding: 50px 0;
+
+}
+
+.contact__content-wrap {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.contact__left,
+.contact__right {
+    padding: 30px 15px;
+    border: 1px solid #4e50533d;
+    border-radius: 5px;
+}
+
+.contact__input-wrap input,
+.contact__input-wrap textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 8px 0;
+    border: 1px solid #4e50533d;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    resize: none;
+}
+
+.contact__input-wrap input:focus,
+.contact__input-wrap textarea:focus {
+    border: 1px solid #4e50533d;
+}
+
+.contact__left h4 {
+    color: #141f31;
+}
+
+
+.contact__right {
+    height: 410px;
+}
+
+.contact__right iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* contact section css end here  */
+
+
+
 
 @media(min-width:1024px) {
     .common-wrap {
@@ -443,6 +503,31 @@ body {
 
     /* attibute section css end here  */
 
+
+    /* contact  css start here  */
+
+    .contact__content-wrap {
+        flex-direction: row;
+
+
+    }
+
+    .contact__left {
+        width: 50%;
+        padding: 50px;
+
+    }
+
+    .contact__right {
+        width: calc(50% - 50px);
+        padding: 50px;
+        height: auto;
+
+    }
+
+
+
+    /* contact  css end here  */
 
 
 }
