@@ -16,7 +16,7 @@
 
 body {
     background-color: #141f31;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
 
 }
 
@@ -367,6 +367,75 @@ body {
 
 
 
+/* footer css start here  */
+.footer__inner {
+    padding: 50px 0;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__item h4 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 12px;
+
+}
+
+.footer__item-left p {
+    font-size: 18px;
+    line-height: 24px;
+    /* margin-bottom: 12px; */
+    color: #fff;
+
+}
+
+.footer__left-item i {
+    margin-bottom: 10px;
+}
+
+.footer__left-item i {
+    margin-right: 10px;
+}
+
+.footer__left-info a,
+.footer__left-info span,
+.footer__left-info p,
+.footer__center-info li {
+    font-size: 16px;
+    color: #ffff;
+    line-height: 24px;
+}
+
+.footer__center-info li {
+    margin-bottom: 7px;
+}
+
+.footer__right-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0 15px;
+}
+
+.footer__right-info .fa {
+    font-size: 30px;
+    line-height: 0;
+    color: #fff;
+}
+
+.footer__item:last-child h4 {
+    margin-bottom: 30px;
+}
+
+/* footer css end here  */
+
+
+
+
 
 @media(min-width:1024px) {
     .common-wrap {
@@ -529,5 +598,15 @@ body {
 
     /* contact  css end here  */
 
+    /* footer css start here  */
 
+  .footer__items{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.footer__item{
+    flex: 1 0 22%;
+}
+
+    /* footer css end here  */
 }
